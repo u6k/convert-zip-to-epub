@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    environment:
+      - "AWS_ACCESS_KEY_ID=s3_access_key"
+      - "AWS_SECRET_ACCESS_KEY=s3_secret_key"
+      - "AWS_REGION=my_region"
+      - "AWS_BUCKET=test"
+      - "AWS_ENDPOINT=http://s3:9000"
